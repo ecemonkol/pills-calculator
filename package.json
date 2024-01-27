@@ -1,0 +1,21 @@
+{
+  "name": "pills",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pages:dev": "wrangler pages dev --compatibility-date=2024-01-17 --proxy 5173 -- npm run dev",
+    "pages:deploy": "npm run build && wrangler pages deploy ./dist"
+  },
+  "dependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10",
+    "wrangler": "^3.25.0"
+  }
+}
